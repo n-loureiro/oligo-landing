@@ -1,8 +1,8 @@
 <template>
   <div class="navbar sticky top-0 z-10 bg-oligo rounded-sm">
       <div class="flex-1 md:pl-20 pl-5">
-        <img src="../assets/logo.png" class="h-10 w-10" />
-        <a class="btn btn-ghost text-primary normal-case text-2xl">Oligo</a>
+       
+        <a class="btn btn-ghost text-primary normal-case text-2xl"> <img src="../assets/oligo_full_green.png" class="h-12" /></a>
       </div>
       <div class="flex-none md:pr-20 pr-5">
         <ul class="menu menu-horizontal p-0">
@@ -28,10 +28,10 @@
           </ul>
         </li> -->
           <li class="md:px-4 px-0">
-            <button class="btn bg-base-100 text-blue-800 btn-md">Login</button>
+           <button class="btn bg-base-100 text-blue-800 btn-md" onclick="window.location.href='https://www.oligoapp.org';" > Login</button>
             </li>
             <li v-if="!isMobile()">
-          <button class="btn btn-primary">Join the wainting list</button>
+          <button class="btn btn-primary" onclick="window.location.href='mailto:hello@oligoapp.org';">Get on the waiting list</button>
         </li>
         </ul>
       </div>
